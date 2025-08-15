@@ -1,33 +1,57 @@
-# Cricket Pose Analysis with Mediapipe
+Cricket Pose Analysis with MediaPipe
+This script analyzes cricket batting posture from a local video file or a YouTube URL using MediaPipe pose detection.
+It overlays visual feedback on the video based on pose metrics such as elbow angle and spine lean.
 
-This script analyzes cricket batting posture from a local video file or a YouTube URL using [MediaPipe](https://developers.google.com/mediapipe) pose detection.  
-It overlays visual cues on the video based on pose metrics such as elbow angle and spine lean.
+Features
+Download video from YouTube or use a local video file.
 
-## Features
-- Downloads video from YouTube or uses a local file.
-- Detects pose landmarks using Mediapipe.
-- Computes biomechanical metrics (e.g., elbow elevation).
-- Overlays feedback icons and text directly onto the video.
-- Outputs an annotated video.
+Pose detection using MediaPipe.
 
-## Requirements
-See `requirements.txt` for the full list.
+Biomechanical metrics: Computes relevant angles (elbow elevation, spine lean, etc.).
 
-Install them with:
-```bash
+Visual overlays: Draws feedback directly on the video (icons and text).
+
+Annotated output: Saves an annotated video with feedback cues.
+
+Requirements
+See requirements.txt for the complete list.
+To install dependencies:
+
+bash
 pip install -r requirements.txt
+Usage
+Supply a local video file or YouTube URL as input.
 
-**Assumptions & Limitations**
+Run the script. It will:
 
-Assumes the subject is fully visible in the frame for accurate landmark detection.
+Download the video if a URL is provided.
 
-Works best with good lighting and stable camera angles.
+Run pose detection for each frame.
 
-Not optimized for multiple people in the frame — may misinterpret poses.
+Compute biomechanical angles.
 
-Angle thresholds are hardcoded and may not match all batting styles.
+Draw feedback overlays.
 
-Real-time performance depends on hardware speed.
+Save the annotated output file.
 
+Output: The result is a video with visible pose landmarks, angle metrics, and feedback graphics.
 
+Assumptions & Limitations
+The subject should be fully visible in the frame for accurate pose detection.
 
+Best results with good lighting and a stable camera.
+
+Not optimized for multiple people — may misinterpret group frames.
+
+Hardcoded angle thresholds: Not tuned for all cricket styles.
+
+Real-time speed depends on device performance.
+
+About MediaPipe
+Uses the latest MediaPipe Pose detection.
+
+Fully open-source and cross-platform.
+
+Can be customized via MediaPipe Model Maker if needed.
+
+For more info: see the MediaPipe Solutions Guide.
