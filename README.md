@@ -17,7 +17,9 @@ Install them with:
 ```bash
 pip install -r requirements.txt
 
-**##Assumpution/limatation**
+
+##**Assumptions & Limitations**
+
 Assumes the subject is fully visible in the frame for accurate landmark detection.
 
 Works best with good lighting and stable camera angles.
