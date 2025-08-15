@@ -17,7 +17,7 @@ Install them with:
 ```bash
 pip install -r requirements.txt
 
-**## Assumptions & Limitations**
+**Assumptions & Limitations**
 
 Assumes the subject is fully visible in the frame for accurate landmark detection.
 
