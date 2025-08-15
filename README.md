@@ -17,15 +17,3 @@ Install them with:
 ```bash
 pip install -r requirements.txt
 
-
-##**Assumptions & Limitations**
-
-Assumes the subject is fully visible in the frame for accurate landmark detection.
-
-Works best with good lighting and stable camera angles.
-
-Not optimized for multiple people in the frame — may misinterpret poses.
-
-Angle thresholds are hardcoded and may not match all batting styles.
-
-Real-time performance depends on hardware speed.
