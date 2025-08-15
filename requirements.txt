@@ -1,0 +1,4 @@
+opencv-python
+mediapipe==0.10.*
+yt-dlp
+numpy
